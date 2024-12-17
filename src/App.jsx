@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import ProductGrid from "./components/ProductCard";
+import ProductGrid from "./components/ProductGrid";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 
