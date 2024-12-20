@@ -1,25 +1,15 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <nav className="bg-black border-gray-200 dark:bg-gray-900 p-4">
-      <div className="flex items-center justify-between">
-        <div className="text-white text-xl font-bold">Ichiba 市場</div>
-        <div className="flex items-center">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="p-2 rounded-l-md border w-[1000px] border-gray-900 focus:outline-none focus:ring-2"
-          />
-          <button className="p-2 bg-zinc-500 text-white rounded-r-md hover:bg-slate-950">
-            Search
-          </button>
-        </div>
-        <div>
-          <a href="/" className="text-gray-300 hover:text-white mx-2">
-            Orders
-          </a>
-          <a href="/products" className="text-gray-300 hover:text-white mx-2">
-            Cart
-          </a>
+    <nav className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold">My Store</Link>
+        <div className="space-x-4">
+          <Link to="/products" className="hover:text-gray-300">Products</Link>
+          <Link to="/cart" className="hover:text-gray-300">Cart</Link>
+          <Link to="/profile" className="hover:text-gray-300">Profile</Link>
         </div>
       </div>
     </nav>

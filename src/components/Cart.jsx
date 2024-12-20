@@ -1,30 +1,73 @@
-const Cart = () => {
-  const cartItems = [
-    { id: 1, name: "Product 1", price: 25, quantity: 2 },
-    { id: 2, name: "Product 2", price: 35, quantity: 1 },
-  ];
+import React from "react";
+import { useShoppingCart } from '../context/ShoppingContext';
 
-  const totalPrice = cartItems.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
-  );
+const Cart = () => {
+  const { cart, removeFromCart, updateQuantity, checkout } = useShoppingCart();
+  
+  const handleCheckout = () => {
+    checkout();
+    // You might want to redirect to a success page or show a modal here
+  };
+
+  const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Shopping Cart</h2>
-      {cartItems.map((item) => (
-        <div key={item.id} className="flex justify-between mb-4">
-          <span>
-            {item.name} (x{item.quantity})
-          </span>
-          <span>${item.price * item.quantity}</span>
+    <div className="container mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
+      {cart.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        <div>
+          {cart.map(item => (
+            <div
+              key={item.id}
+              className="flex justify-between items-center border-b py-4"
+            >
+              <div className="flex items-center gap-4">
+                <img 
+                  src={item.image} 
+                  alt={item.name} 
+                  className="w-20 h-20 object-cover rounded"
+                />
+                <div>
+                  <h3 className="text-xl">{item.name}</h3>
+                  <p>${item.price} x {item.quantity}</p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      className="bg-gray-200 px-2 rounded"
+                    >
+                      -
+                    </button>
+                    <span>{item.quantity}</span>
+                    <button
+                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      className="bg-gray-200 px-2 rounded"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => removeFromCart(item.id)}
+                className="bg-red-500 text-white px-4 py-2 rounded"
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+          <div className="mt-6 text-right">
+            <h2 className="text-2xl font-bold">Total: ${totalPrice.toFixed(2)}</h2>
+            <button 
+              onClick={handleCheckout}
+              className="mt-4 bg-green-600 text-white px-6 py-3 rounded"
+            >
+              Proceed to Checkout
+            </button>
+          </div>
         </div>
-      ))}
-      <hr className="my-4" />
-      <h3 className="text-lg font-bold">Total: ${totalPrice}</h3>
-      <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-        Checkout
-      </button>
+      )}
     </div>
   );
 };

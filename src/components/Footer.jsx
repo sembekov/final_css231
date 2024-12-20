@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="w-full sm:w-1/3 mb-4 sm:mb-0">
             <h3 className="text-xl font-bold mb-2">About Us</h3>
             <p className="text-gray-300">
-              Ichiba 市場 is your go-to online store for unique products. We
+              Ichiba 市場 is your go-to online store for unique products. Wet
               bring the best deals to your doorstep!
             </p>
           </div>
