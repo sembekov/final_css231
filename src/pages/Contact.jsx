@@ -1,21 +1,16 @@
 import React, { useState } from "react";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Contact Form Submitted", formData);
-    setFormData({ name: "", email: "", message: "" });
+    console.log("Form submitted:", form);
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
@@ -30,7 +25,7 @@ function Contact() {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
+            value={form.name}
             onChange={handleChange}
             className="w-full p-2 border rounded"
             required
@@ -44,7 +39,7 @@ function Contact() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
+            value={form.email}
             onChange={handleChange}
             className="w-full p-2 border rounded"
             required
@@ -57,7 +52,7 @@ function Contact() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
+            value={form.message}
             onChange={handleChange}
             className="w-full p-2 border rounded"
             required

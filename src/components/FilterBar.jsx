@@ -18,3 +18,5 @@ function FilterBar({ categories, onFilter }) {
     </div>
   );
 }
+
+export default FilterBar;
