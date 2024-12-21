@@ -4,7 +4,7 @@ const ShoppingContext = createContext();
 
 export const ShoppingProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [orderHistory, setOrderHistory] = useState([]);p
+  const [orderHistory, setOrderHistory] = useState([]);  // Удален лишний символ p
 
   const addToCart = (product) => {
     setCart(prevCart => {
@@ -45,7 +45,7 @@ export const ShoppingProvider = ({ children }) => {
     };
     
     setOrderHistory(prev => [newOrder, ...prev]);
-    setCart([]); // Clear cart after checkout
+    setCart([]); 
     return newOrder;
   };
 
