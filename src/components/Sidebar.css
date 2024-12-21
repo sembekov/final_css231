@@ -1,57 +1,98 @@
 /* Sidebar.css */
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #f8f9fa;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Показывать сайдбар */
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sidebar ul li .icon {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.sidebar ul li a.active {
+  border-left: 4px solid #007bff;
+  padding-left: 6px;
+}
+
+/* Кнопка для открытия сайдбара */
+.sidebar-toggle {
+  display: none; /* Скрывать на больших экранах */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  color: #333;
+}
+
+/* Прозрачный фон для закрытия сайдбара */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%); /* Скрыть сайдбар по умолчанию */
   }
-  
-  .sidebar h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
+
+  .sidebar-toggle {
+    display: block; /* Показать кнопку на мобильных устройствах */
   }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .sidebar ul li .icon {
-    font-size: 1.2rem;
-    color: #333;
-    margin-right: 10px;
-  }
-  
-  .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .sidebar ul li a:hover,
-  .sidebar ul li a.active {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .sidebar ul li a.active {
-    border-left: 4px solid #007bff;
-    padding-left: 6px;
-  }
-  
+}
