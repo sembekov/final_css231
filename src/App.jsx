@@ -8,6 +8,10 @@ import Cart from "./components/Cart";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetail";
+import OrderHistory from "./components/OrderHistory";
+
+
+
 
 function App() {
   return (
@@ -22,6 +26,7 @@ function App() {
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/orders" element={<OrderHistory />} />
             </Routes>
           </main>
           <Footer />
