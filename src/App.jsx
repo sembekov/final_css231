@@ -15,13 +15,15 @@ function App() {
       <Router>
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/products" element={<ProductGrid />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Hero />} />
+              <Route path="/products" element={<ProductGrid />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
+          </main>
           <Footer />
         </div>
       </Router>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { useShoppingCart } from '../context/ShoppingContext';
+import { Link } from 'react-router-dom';
 
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
@@ -195,30 +196,30 @@ description: "State-of-the-art product with exceptional functionality, designed 
     <div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 p-6">
         {products.map((product) => (
-          <div
-            key={product.id}
-            onClick={() => handleProductClick(product)}
-            className="cursor-pointer border text-center text-gray-100 border-gray-800 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gray-800 dark:bg-gray-900"
+        <Link
+        to={`/product/${product.id}`}
+        key={product.id}
+        className="cursor-pointer border text-center text-gray-100 border-gray-800 dark:border-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-gray-800 dark:bg-gray-900"
+      >
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-48 object-cover mb-2"
+        />
+        <div className="p-4 text-white">
+          <h3 className="text-lg font-semibold">{product.name}</h3>
+          <p className="text-gray-300">${product.price}</p>
+          <button 
+            className="mt-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleAddToCart(product);
+            }}
           >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-48 object-cover mb-2"
-            />
-            <div className="p-4 text-white">
-              <h3 className="text-lg font-semibold">{product.name}</h3>
-              <p className="text-gray-300">${product.price}</p>
-              <button 
-                className="mt-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-blue-700"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleAddToCart(product);
-                }}
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
+            Add to Cart
+          </button>
+        </div>
+      </Link>
         ))}
       </div>
 
