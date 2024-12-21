@@ -50,67 +50,67 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      name: "P",
+      name: "Towels",
       price: 25,
-      image: "/assets/perfoms.jpg",
+      image: "/assets/towels.webp",
       description:
-        "High-quality product with premium features. Perfect for everyday use with outstanding durability.",
+        "Soft and absorbent towels, ideal for everyday use. These towels are made from 100% organic cotton for durability and comfort. They are perfect for the bathroom, kitchen or beach, combining style and functionality.",
     },
     {
       id: 2,
-      name: "Product 2",
+      name: "Dryer",
       price: 35,
-      image: "/api/placeholder/400/300",
+      image: "/assets/dryer.webp",
       description:
-        "Compact and portable, this product is perfect for those who need versatility on the go.",
+        "A powerful and efficient dryer that quickly and gently dries clothes, bedding and other fabrics. Designed for ease of daily use, saving time and energy. Compact and modern design fits perfectly into any home environment.",
     },
     {
       id: 3,
-      name: "Product 3",
+      name: "Carpet",
       price: 45,
-      image: "/api/placeholder/400/300",
+      image: "/assets/carpet.webp",
       description:
-        "Engineered with precision, offering cutting-edge technology and high performance.",
+        "Engineered with precision, offering cutting-edge technology and high performaAn elegant and versatile rug that will become a stylish accent in your interior. Made from high quality materials for softness, durability and easy care. This rug is perfect for cozying up and adding warmth to any room.",
     },
     {
       id: 4,
-      name: "Product 4",
+      name: "Perfume",
       price: 60,
-      image: "/api/placeholder/400/300",
+      image: "/assets/perfume.jpg",
       description:
-        "Luxury item designed for those who appreciate the finer things in life.",
+        "An exquisite fragrance that highlights your individuality and creates an unforgettable aura of elegance. Carefully crafted with a balanced composition of fresh, floral, and warm notes, it is perfect for everyday wear and special occasions. This perfume embodies luxury and sophistication at its finest.",
     },
     {
       id: 5,
-      name: "Product 5",
+      name: "Robot cleaner",
       price: 50,
-      image: "/api/placeholder/400/300",
+      image: "/assets/robot_cleaner.webp",
       description:
-        "The perfect blend of style and functionality, ideal for both casual and formal occasions.",
+        "A smart and efficient cleaning solution designed to keep your home spotless with minimal effort. Equipped with advanced navigation technology, this robot cleaner seamlessly maneuvers around furniture and obstacles, ensuring a thorough clean in every corner. Ideal for busy lifestyles, it saves time while maintaining a pristine living space.",
     },
     {
       id: 6,
-      name: "Product 6",
-      price: 20,
-      image: "/api/placeholder/400/300",
+      name: "Iphone",
+      price: 200,
+      image: "/assets/iphone.webp",
       description:
-        "Affordable yet reliable, this product offers great value without compromising quality.",
+        "The ultimate blend of cutting-edge technology and elegant design, the iPhone redefines what a smartphone can do. Featuring a stunning display, powerful performance, and an advanced camera system, it offers an unparalleled user experience. With seamless integration of hardware and software, the iPhone is built to keep you connected, productive, and entertained.",
     },
     {
       id: 7,
-      name: "Product 7",
+      name: "AirPods",
       price: 40,
-      image: "/api/placeholder/400/300",
+      image: "/assets/AirPods.webp",
       description:
-        "A sophisticated design that brings modern aesthetics into your home or office.",
+        "Experience wireless freedom with AirPods, delivering exceptional sound quality and effortless connectivity. Designed with advanced audio technology and a comfortable fit, they are perfect for music, calls, and more. With a sleek design, long-lasting battery life, and seamless integration with your devices, AirPods redefine the way you listen.",
     },
     {
       id: 8,
-      name: "Product 8",
+      name: "Mantle",
       price: 75,
-      image: "/api/placeholder/400/300",
+      image: "/assets/mantle.webp",
       description:
-        "Top-tier performance and durability, built to last for years of heavy use.",
+        "A stylish and functional addition to your home, the mantle serves as the perfect centerpiece for your living space. Crafted with high-quality materials and timeless design, it complements any interior while providing a sturdy and elegant surface for displaying decor, photographs, or keepsakes. Its versatile style makes it a focal point that enhances the warmth and charm of your room.",
     },
     {
       id: 9,
