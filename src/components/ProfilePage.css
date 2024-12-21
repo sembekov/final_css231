@@ -1,0 +1,111 @@
+.profile-container {
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+.profile-header {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+
+.profile-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+  
+  
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+  
+
+.profile-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+  
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+
+.update-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+  
+
+.delete-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.update-button:hover {
+    background-color: #444;
+}
+  
+.delete-button:hover {
+    background-color: #ffe5e5;
+}
+  
+
+.profile {
+    display: flex;
+}
+  
+
+form input,
+form button {
+    margin: 0;
+}
