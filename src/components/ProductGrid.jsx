@@ -91,7 +91,7 @@ const ProductGrid = () => {
     {
       id: 6,
       name: "Iphone",
-      price: 200,
+      price: 1000,
       image: "/assets/iphone.webp",
       description:
         "The ultimate blend of cutting-edge technology and elegant design, the iPhone redefines what a smartphone can do. Featuring a stunning display, powerful performance, and an advanced camera system, it offers an unparalleled user experience. With seamless integration of hardware and software, the iPhone is built to keep you connected, productive, and entertained.",
@@ -212,7 +212,7 @@ const ProductGrid = () => {
     {
       id: 21,
       name: "Smart Wath",
-      price: 30,
+      price: 90,
       image: "/assets/Smart_w.jpg",
       description:
         "Stay connected and on track with these advanced smartwatches, combining cutting-edge technology with stylish design. Featuring health monitoring, fitness tracking, and seamless notifications, they help you manage your daily activities with ease. Durable, versatile, and user-friendly, these smartwatches are the ultimate companion for an active and productive lifestyle.",
@@ -221,7 +221,7 @@ const ProductGrid = () => {
     {
       id: 22,
       name: "Farmstay fabric Real Peach",
-      price: 30,
+      price: 40,
       image: "/assets/FarmStay.jpg",
       description:
         "A mask with peach extract nourishes and energizes the skin, making it smooth and silky. Peach fruit extract has a softening and tonic effect on the skin.Directions for use: Apply a fabric mask to previously cleansed facial skin and spread evenly, leave until full effect is achieved for no more than 30 minutes, distribute the remaining essence with massage movements over the skin of the face, neck and décolleté.'",
@@ -239,7 +239,7 @@ const ProductGrid = () => {
     {
       id: 24,
       name: "Hand Mixer",
-      price: 30,
+      price: 70,
       image: "/assets/Hand_Mixer.jpg",
       description:
         "The device allows you to whip cocktails and mousses, and efficiently knead stiff shortbread and elastic yeast dough.",
@@ -257,7 +257,7 @@ const ProductGrid = () => {
     {
       id: 26,
       name: "Apple case",
-      price: 30,
+      price: 5,
       image: "/assets/Case_A.jpg",
       description:
         "Lightweight, but at the same time extremely reliable case for Apple iPhone 11. Reinforced corners of the case - reduce impact force by 30%. Full camera protection and protruding edges above the screen surface provide additional protection for the phone's screen and camera. Crystal-transparent, thin and plastic material tightly fits the body of the smartphone, preserving the style and individuality of the gadget.",
@@ -265,26 +265,26 @@ const ProductGrid = () => {
 
     {
       id: 27,
-      name: "Smart Wath",
-      price: 30,
-      image: "/assets/Chair.jpg",
+      name: "Kitchen scales",
+      price: 10,
+      image: "/assets/Generic.jpg",
       description:
-        "",
+        "Modern electronic kitchen scales have an elegant plastic platform. The scales are made in a white case. Weighing limit 10 kg.",
     },
 
     {
       id: 28,
-      name: "Smart Wath",
-      price: 30,
-      image: "/assets/Smart_W.jpg",
+      name: "Bed",
+      price: 500,
+      image: "/assets/Bed.jpg",
       description:
-        "",
+        "The bed has a high headboard; this design solution visually separates the sleeping area from the room, creating an atmosphere of comfort and tranquility around it. On a comfortable double bed, two people can comfortably sit and get a good night's sleep.",
     },
 
     {
       id: 29,
       name: "Microwave",
-      price: 30,
+      price: 350,
       image: "/assets/Micro.jpg",
       description:
         "The LG MS-2042DB microwave oven is made in a stylish black color, which makes it universal for any kitchen design. The device will especially appeal to those consumers who value minimalism and strict lines above all else in household appliances. The glossy front surface gives the unit solidity.",
@@ -293,7 +293,7 @@ const ProductGrid = () => {
     {
       id: 30,
       name: "Thermos",
-      price: 30,
+      price: 25,
       image: "/assets/thermos.jpg",
       description:
         "Keep your beverages at the perfect temperature for hours with this high-quality thermos. Designed with double-wall insulation, it maintains the heat or cold, ensuring your drinks stay fresh and enjoyable. Durable, leak-proof, and easy to carry, this thermos is ideal for work, travel, or outdoor adventures.",
