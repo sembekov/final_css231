@@ -114,51 +114,51 @@ const ProductGrid = () => {
     },
     {
       id: 9,
-      name: "Product 9",
+      name: "Shirt",
       price: 30,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Shirt.webp",
       description:
-        "Perfect for the outdoors, combining ruggedness with comfort for long-lasting use.",
+        "A timeless wardrobe essential, this shirt combines comfort and style effortlessly. Made from high-quality, breathable fabric, it ensures a perfect fit and long-lasting wear. Whether for formal occasions or casual outings, its versatile design and attention to detail make it an ideal choice for any setting.",
     },
     {
       id: 10,
-      name: "Product 10",
+      name: "Jacket",
       price: 55,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Jacket.webp",
       description:
-        "A sleek design and powerful functionality make this product a must-have for tech enthusiasts.",
+        "A perfect combination of style and functionality, this jacket is designed to keep you warm and comfortable in any weather. Crafted from premium materials, it offers durability and a sleek, modern look. Whether for casual wear or outdoor adventures, this jacket ensures you stay protected while maintaining a sophisticated style.",
     },
     {
       id: 11,
-      name: "Product 11",
-      price: 95,
-      image: "/api/placeholder/400/300",
+      name: "TV",
+      price: 950,
+      image: "/assets/TV.webp",
       description:
-        "An advanced product built with premium materials for exceptional performance and longevity.",
+        "Immerse yourself in stunning visuals and exceptional clarity with this high-definition TV. Equipped with advanced display technology, it delivers vibrant colors, deep contrasts, and smooth motion for an unparalleled viewing experience. Perfect for movies, gaming, or streaming, this sleek and modern TV combines cutting-edge performance with elegant design to enhance any living space.",
     },
     {
       id: 12,
-      name: "Product 12",
+      name: "Hoodie",
       price: 65,
-      image: "/api/placeholder/400/300",
+      image: "/assets/hoodie.webp",
       description:
-        "Designed for comfort and style, offering premium features and a modern look.",
+        "Stay cozy and stylish with this versatile hoodie, crafted for ultimate comfort and durability. Made from premium, soft-touch fabric, it provides warmth while allowing breathability. Perfect for casual outings or relaxing at home, its modern design and relaxed fit make it an essential addition to your wardrobe.",
     },
     {
       id: 13,
-      name: "Product 13",
-      price: 80,
-      image: "/api/placeholder/400/300",
+      name: "Monitor",
+      price: 400,
+      image: "/assets/Monitor.jpg",
       description:
-        "High-tech gadget packed with features to make your life easier and more efficient.",
+        "Experience exceptional clarity and precision with this high-performance monitor. Designed for work, gaming, or entertainment, it features a vibrant display with sharp resolution and rich colors. With ergonomic adjustments and sleek design, this monitor combines functionality and style to enhance your productivity and viewing experience.",
     },
     {
       id: 14,
-      name: "Product 14",
+      name: "Computer",
       price: 100,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Computer.jpg",
       description:
-        "A perfect fusion of innovation and design, this product is built to impress.",
+        "A powerful and reliable computer built to handle everything from everyday tasks to demanding applications. Featuring high-speed performance, ample storage, and advanced graphics, it’s perfect for work, gaming, or creative projects. With its sleek design and cutting-edge technology, this computer delivers efficiency and versatility in one sophisticated package.",
     },
     {
       id: 15,
