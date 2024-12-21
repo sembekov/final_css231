@@ -4,7 +4,7 @@ const ShoppingContext = createContext();
 
 export const ShoppingProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [orderHistory, setOrderHistory] = useState([]);
+  const [orderHistory, setOrderHistory] = useState([]);p
 
   const addToCart = (product) => {
     setCart(prevCart => {
