@@ -162,53 +162,145 @@ const ProductGrid = () => {
     },
     {
       id: 15,
-      name: "Product 15",
+      name: "Adapter",
       price: 70,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Adapter.jpg",
       description:
-        "Premium quality and unique design, perfect for anyone looking for a stylish upgrade.",
+        "The Apple 18W USB-C Power Adapter is a compact and efficient charger designed to charge your devices quickly and efficiently.This 18W adapter is suitable for the following models:Apple Iphone 7/8/8 plus, iphone 10, XR, 11, 11 pro, 11pro max, 12, 12 pro, 12 pro max, iphone 13, 13 pro, 13 pro max, 14, 14 pro, 14 pro max, iPhone 15, 15 pro, 15 pro max, iPhone 16/16 plus/16 pro/16 pro max",
     },
     {
       id: 16,
-      name: "Product 16",
+      name: "Apple Lightning",
       price: 120,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Apple_lightning.jpg",
       description:
-        "Designed with the latest technology and the highest standards for performance.",
+        "The 1 m Apple USB Type-C to Lightning cable is convenient for connecting an iPhone, iPad or iPod with a Lightning connector to devices with a USB Type-C or Thunderbolt 3 port for synchronization and charging, or to an Apple USB Type-C 18-watt power adapter. W, 20 W, 29 W, 30 W, 61 W, 87 W or 96 W.",
     },
     {
       id: 17,
-      name: "Product 17",
+      name: "Kettle",
       price: 85,
-      image: "/api/placeholder/400/300",
+      image: "/assets/Kettle.jpg",
       description:
-        "A versatile and reliable product that offers maximum convenience and utility.",
+        "Effortlessly prepare hot beverages with this sleek and efficient kettle. Designed with durable materials and advanced safety features, it boils water quickly while ensuring ease of use. Its modern design and convenient functionality make it a perfect addition to any kitchen or office setup.",
     },
     {
       id: 18,
-      name: "Product 18",
-      price: 90,
-      image: "/api/placeholder/400/300",
+      name: "Washing machine",
+      price: 900,
+      image: "/assets/Washing_machine.jpg",
       description:
-        "A stylish and efficient product that combines performance with elegance.",
+        "The LG F2M5HS6S washing machine in black and silver is an ideal choice for a large family due to its ability to wash up to 7 kg of laundry per cycle. This allows you to simultaneously clean two sets of bedding, a large blanket or a down jacket inside. The model is powered by an inverter motor, has control using a rotary mechanism and a display that displays all the information the user needs.",
     },
     {
       id: 19,
-      name: "Product 19",
+      name: "Sharm box",
       price: 110,
-      image: "/api/placeholder/400/300",
-
+      image: "/assets/Sharm.jpg",
       description:
-        "State-of-the-art product with exceptional functionality, designed for professionals.",
+        "A beautifully crafted charm box designed to store and showcase your precious keepsakes and jewelry. Featuring an elegant design with intricate details, it combines functionality with style. Perfect for organizing small treasures, it makes a thoughtful gift or a luxurious addition to your personal collection.",
     },
     {
       id: 20,
-      name: "Product 20",
-      price: 130,
-      image: "/api/placeholder/400/300",
+      name: "Chair",
+      price: 30,
+      image: "/assets/Chair.jpg",
       description:
-        "The ultimate product for tech lovers, offering unmatched performance and design.",
+        "A perfect blend of comfort and style, this chair is designed to support you through long hours of work or relaxation. Crafted with high-quality materials, it offers ergonomic features and a sturdy build, ensuring durability and ease of use. Its modern design makes it a versatile addition to any home or office space.",
     },
+
+    {
+      id: 21,
+      name: "Smart Wath",
+      price: 30,
+      image: "/assets/Smart_w.jpg",
+      description:
+        "Stay connected and on track with these advanced smartwatches, combining cutting-edge technology with stylish design. Featuring health monitoring, fitness tracking, and seamless notifications, they help you manage your daily activities with ease. Durable, versatile, and user-friendly, these smartwatches are the ultimate companion for an active and productive lifestyle.",
+    },
+
+    {
+      id: 22,
+      name: "Farmstay fabric Real Peach",
+      price: 30,
+      image: "/assets/FarmStay.jpg",
+      description:
+        "A mask with peach extract nourishes and energizes the skin, making it smooth and silky. Peach fruit extract has a softening and tonic effect on the skin.Directions for use: Apply a fabric mask to previously cleansed facial skin and spread evenly, leave until full effect is achieved for no more than 30 minutes, distribute the remaining essence with massage movements over the skin of the face, neck and décolleté.'",
+    },
+
+    {
+      id: 23,
+      name: "Blender",
+      price: 50,
+      image: "/assets/Blender.jpg",
+      description:
+        "Blender 2 in 1. Blender + chopper (coffee grinder), 3 speeds + pulse, glass flask, silver color.",
+    },
+
+    {
+      id: 24,
+      name: "Hand Mixer",
+      price: 30,
+      image: "/assets/Hand_Mixer.jpg",
+      description:
+        "The device allows you to whip cocktails and mousses, and efficiently knead stiff shortbread and elastic yeast dough.",
+    },
+
+    {
+      id: 25,
+      name: "Smart speaker",
+      price: 79,
+      image: "/assets/Smart_s.jpg",
+      description:
+        "The smart speaker New Yandex.Station Mini YNDX-00020K, black, is equipped with an LED display on the front side. It shows time, timer and weather. The 10W speaker system produces clear sound with spatial effect.",
+    },
+
+    {
+      id: 26,
+      name: "Apple case",
+      price: 30,
+      image: "/assets/Case_A.jpg",
+      description:
+        "Lightweight, but at the same time extremely reliable case for Apple iPhone 11. Reinforced corners of the case - reduce impact force by 30%. Full camera protection and protruding edges above the screen surface provide additional protection for the phone's screen and camera. Crystal-transparent, thin and plastic material tightly fits the body of the smartphone, preserving the style and individuality of the gadget.",
+    },
+
+    {
+      id: 27,
+      name: "Smart Wath",
+      price: 30,
+      image: "/assets/Chair.jpg",
+      description:
+        "",
+    },
+
+    {
+      id: 28,
+      name: "Smart Wath",
+      price: 30,
+      image: "/assets/Smart_W.jpg",
+      description:
+        "",
+    },
+
+    {
+      id: 29,
+      name: "Microwave",
+      price: 30,
+      image: "/assets/Micro.jpg",
+      description:
+        "The LG MS-2042DB microwave oven is made in a stylish black color, which makes it universal for any kitchen design. The device will especially appeal to those consumers who value minimalism and strict lines above all else in household appliances. The glossy front surface gives the unit solidity.",
+    },
+
+    {
+      id: 30,
+      name: "Thermos",
+      price: 30,
+      image: "/assets/thermos.jpg",
+      description:
+        "Keep your beverages at the perfect temperature for hours with this high-quality thermos. Designed with double-wall insulation, it maintains the heat or cold, ensuring your drinks stay fresh and enjoyable. Durable, leak-proof, and easy to carry, this thermos is ideal for work, travel, or outdoor adventures.",
+    },
+
+    
+    
   ];
   return (
     <div>
